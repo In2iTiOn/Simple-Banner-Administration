@@ -1,0 +1,61 @@
+
+/*------- Add & Update -------*/
+
+.my-forms {
+	display: block;
+	background: rgb(79,164,107);
+	width: 1024px;
+	margin: auto;
+	margin-top: 50px;
+	left: 0; right: 0;
+}
+
+.my-form-text {
+	color: rgb(245,245,220);
+}
+.content-my-forms {
+	padding: 20px 0 20px 20px;
+}
+
+.my-buttons {
+	display: block;
+	background: rgb(46,95,62);
+	color: rgb(245,245,220);
+}
+
+.my-buttons:hover {
+	background: rgb(245,245,220);
+	color: rgb(46,95,62);
+}
+
+/*------- Banner & Banners -------*/
+
+.my-tables {
+	background: rgb(79,164,107);
+	color: rgb(245,245,220);
+	width: 1024px;
+	margin: auto;
+	margin-top: 50px;
+	left: 0; right: 0;
+	padding: 20px 0 20px 20px; 
+}
+
+.my-tables a, a:hover, a:active {
+	color: black;
+}
+
+table {
+	position: relative;
+	width: 80%;
+	margin: auto;
+	left: 0; right: 0;
+	bordercolor: black;
+	border: 2px;
+	text-align: center;
+}
+
+#buttons-center {
+	display: block;
+	margin: auto;
+	left: 0; right: 0;
+}

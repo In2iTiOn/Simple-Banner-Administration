@@ -1,0 +1,251 @@
+﻿
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+
+body {
+	background-color: #FFEFDB;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+}
+
+@media (max-width: 640) {
+    .container{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/*--------------- Header ---------------*/
+
+.header {
+	height: 100%;
+	margin-top: 50px;
+	border-radius: 5px 5px 0  0;
+	background: rgb(43,43,43);
+}
+
+.header_one {
+	height: 30px;
+	border-radius: 5px 5px 0  0;
+	background: rgb(83,186,245);
+}
+
+.header_two {
+	max-height: 440px;
+	font-size: 24px;
+	color: rgb(83,186,245);
+}
+
+.header .header_two .main_slider {
+	width: 100%;
+}
+
+.header_menu {
+	display: block;
+}
+
+.header_menu ul li {
+	display: block;
+	width: 150px;
+	float: left;
+}
+
+.header_menu ul li a {
+	display: block;
+	font-size: 18px;
+	color: #8B8682;
+	padding: 10px;
+	-webkit-transition: all .5s linear;
+	text-decoration: none;
+	text-align: center;
+}
+
+.header .header_menu ul li:hover a {
+	color: rgb(43,43,43);
+	background: rgb(83,186,245);
+	border-radius: 5px;
+	box-shadow: 7px 7px 15px rgba(0,0,0,0.5);
+	-webkit-transition: all .2s ease;
+}
+
+/*.header .header_menu {
+	margin-top: 5px;
+	display: block;
+}
+
+.header .header_menu ul {
+}
+
+.header .header_menu ul li {
+	margin-left: 0;
+	max-width: 190px;
+	text-align: center;
+	width: 190px;
+}
+
+.header .header_menu ul li a {
+	display: block;
+	font-size: 18px;
+	color: #8B8682;
+	padding: 10px;
+	-webkit-transition: all .5s linear;
+	text-decoration: none;
+
+	z-index: 1;
+}
+
+.header .header_menu ul li:hover a {
+	color: rgb(43,43,43);
+	background: rgb(83,186,245);
+	border-radius: 5px;
+	box-shadow: 7px 7px 15px rgba(0,0,0,0.5);
+	-webkit-transition: all .2s ease;
+}
+
+.header_menu_button {
+	width: 32px;
+	height: 32px;
+	background: url(../images/menu.png);
+
+	opacity: .9;
+}*/
+
+#name {
+	display: block;
+	font-size: 22px;
+	width: 330px;
+	margin: 0 auto;
+}
+
+/*--------------- Contanier ---------------*/
+
+.my_contanier {
+	margin-top: 20px; 
+	width: 100%;
+}
+
+.content {
+	margin-left: 20px;
+}
+
+.headlines {
+	display: block;
+	font-size: 24px;
+	color: rgb(83,186,245);
+}
+
+.our_information {
+	margin-top: 10px;
+	display: block;
+	font-size: 18px;
+	color: rgb(43,43,43);
+	text-transform: none;
+}
+
+.teachers {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.department {
+	margin-top: 20px;
+	margin-left: 100px;
+	float: left;
+}
+
+.departments_pictures {
+	display: block;
+	margin: 0 auto;
+}
+
+.departments_pictures:hover {
+	display: block;
+	margin: 0 auto;
+	transform: rotate(15deg);
+	transition: all .2s linear;
+}
+
+.headlines2 {
+	margin-top: 10px;
+	display: block;
+	font-size: 18px;
+	color: rgb(83,186,245);
+	text-align: center;
+}
+
+/*--------------- Footer ---------------*/
+
+.footer {
+	background: rgb(43,43,43);
+	border-radius: 0  0 5px 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.footer_one {
+	height: 60px;
+}
+
+.footer_two {
+	position: relative;
+	height: 50px;
+	border-radius: 0  0 5px 5px;
+	background: rgb(83,186,245);
+}
+
+.copyright {
+	display: block;
+	margin-top: 10px;
+	margin-left: 20px;
+	font-size: 18px;
+	color: rgb(43,43,43);
+	float: left;
+}
+
+.copyright:hover {
+	color: white;
+	-webkit-transition: all .2s ease;
+}
+
+.links {
+	position: absolute;
+	float: left;
+	display: block;
+	right: 20px;
+	font-size: 18px;
+	color: rgb(43,43,43);
+}
+
+.links ul li {
+	list-style-type: none;
+	float: left;
+	margin-left: 20px;
+}
+
+/*--------------- Hexagon Logo ---------------*/
+
+.hexagon_logo {
+	top: -10px;
+	margin-left: 10px;
+    width: 400px;
+    height: 55px;
+    background: rgb(83,186,245);
+    position: relative;
+    box-shadow: 7px 7px 15px rgba(0,0,0,0.5);
+    padding: 2px;
+    z-index: 1;
+}
+
+.hexagon_logo:before {
+    content: "";
+    position: absolute;
+    top: -25px; 
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 25px solid rgb(83,186,245);
+    z-index: 1;
+}
+
+/*------------------------------*/
