@@ -7,9 +7,13 @@ class BannerController extends Controller {
 	* 
 	* @param $id - banner ID
 	*/
-	public function show($id) {
-		$banner = $this->model('Banner');
-		$this->view('home/banner/banner', $banner->getBannerById($id));
+	public function show($id = NULL) {
+		if ($id){
+			$banner = $this->model('Banner');
+			$this->view('home/banner/banner', $banner->getBannerById($id));
+		} else {
+			$this->view('home/error', 'Missing argument for method show()');
+		}
 	}
 
 
@@ -33,7 +37,7 @@ class BannerController extends Controller {
 	}
 
 	/**
-	*  allows to add new banner 
+	*  allows to add a new banner 
 	*/
 	public function add() {
 		$banner = $this->model('Banner');
@@ -53,17 +57,21 @@ class BannerController extends Controller {
 	*
 	* @param $id - banner ID
 	*/
-	public function update($id) {
-		$banner = $this->model('Banner');
-		if (isset($_POST['name'])) {
-			$name = $_POST['name'];
-			$visible = $_POST['visible'];
-			$body = $_POST['body'];
-			$banner->updateBanner($id, $name, $visible, $body);
-			$this->redirect("../../../bn-admin");		
+	public function update($id=NULL) {
+		if($id) {
+			$banner = $this->model('Banner');
+			if (isset($_POST['name'])) {
+				$name = $_POST['name'];
+				$visible = $_POST['visible'];
+				$body = $_POST['body'];
+				$banner->updateBanner($id, $name, $visible, $body);
+				$this->redirect("../../../bn-admin");		
+			} else {
+				$this->view('home/banner/update', $banner->getBannerById($id));	
+			}	
 		} else {
-			$this->view('home/banner/update', $banner->getBannerById($id));	
-		}	
+			$this->view('home/error', 'Missing argument for update');		
+		}
 	}
 
 	/**
@@ -71,7 +79,7 @@ class BannerController extends Controller {
 	*
 	* @param $url - page url
 	*/
-	public function iframe($url) {
+	public function iframe($url='index') {
 		$banner = $this->model('Banner');
 		$id = $banner->getBannerIDByPageURL($url);
 		echo $id;
